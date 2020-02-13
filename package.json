@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -17,7 +18,7 @@
   },
   "nodemonConfig": {
     "env":{
-      "URL":"123"
+      "URL":"mongodb://library-database:hlkbpPRiwZFaYANAaXnwdsBepUjCx5svoUtPf928i8G3TZ0m0WZ1ANDCBOyMjzidSox58ueQS4anENE1r8pe7w==@library-database.documents.azure.com:10255/?ssl=true&replicaSet=globaldb"
     }
   }
 }

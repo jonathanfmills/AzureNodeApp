@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
       client = await MongoClient.connect(URL);
       const db=client.db(dbName);
       const response = await db.collection('books').find().toArray();
-      appInsights.defaultClient.trackEvent({name: 'mongoRequest', properties: {dbname, size: response.length}});
+      appInsights.defaultClient.trackEvent({name: 'mongoRequest', properties: {dbName, size: response.length}});
       res.render('index', {books: response});
     }catch(err){
       console.log(err);

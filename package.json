@@ -7,6 +7,7 @@
     "dev": "nodemon ./bin/www"
   },
   "dependencies": {
+    "applicationinsights": "^1.7.2",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
@@ -17,8 +18,8 @@
     "nodemon": "^2.0.2"
   },
   "nodemonConfig": {
-    "env":{
-      "URL":"mongodb://library-database:hlkbpPRiwZFaYANAaXnwdsBepUjCx5svoUtPf928i8G3TZ0m0WZ1ANDCBOyMjzidSox58ueQS4anENE1r8pe7w==@library-database.documents.azure.com:10255/?ssl=true&replicaSet=globaldb"
+    "env": {
+      "URL": "mongodb://library-database:hlkbpPRiwZFaYANAaXnwdsBepUjCx5svoUtPf928i8G3TZ0m0WZ1ANDCBOyMjzidSox58ueQS4anENE1r8pe7w==@library-database.documents.azure.com:10255/?ssl=true&replicaSet=globaldb"
     }
   }
 }

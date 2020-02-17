@@ -8,7 +8,7 @@ appInsights.setup("934c3248-e3f3-4ffa-b32b-bdaf4511e568");
 appInsights.start();
 let start = Date.now();
 let appClient = appInsights.defaultClient;
-
+appClient.trackEvent({name: "my custom event", properties: {customProperty: "custom property value"}});
 var app = require('../app');
 var debug = require('debug')('azureapp:server');
 var http = require('http');
